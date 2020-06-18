@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Resultado Picas y Famas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Resultado de juego:</h1>
+<p th:text="'Su numero fue: ' + ${juego.numero}" />
+<p th:text="'Numero random: ' + ${juego.numeroRandom}" />
+<p th:text="${juego.resultado}" />
+
+<a href="/juego">Intente nuevamente...</a>
+</body>
